@@ -19,6 +19,9 @@ const AppMenu = () => {
             label: 'Cruds incriveis',
             items: [
                 { label: 'Usuário', icon: 'pi pi-fw pi-id-card', to: '/pages/usuario' },
+                { label: 'Recursos', icon: 'pi pi-fw pi-truck', to: '/pages/recurso' },
+                { label: 'Perfis', icon: 'pi pi-fw pi-users', to: '/pages/perfil' },
+
             ]
         }
     ];
