@@ -22,6 +22,7 @@ const AppMenu = () => {
                 { label: 'Recursos', icon: 'pi pi-fw pi-truck', to: '/pages/recurso' },
                 { label: 'Perfis', icon: 'pi pi-fw pi-users', to: '/pages/perfil' },
                 { label: 'Funções', icon: 'pi pi-fw pi-wrench', to: '/pages/perfil-usuario' },
+                { label: 'Permissões', icon: 'pi pi-fw pi-lock', to: '/pages/permissao-perfil-recurso' },
                 
 
             ]
