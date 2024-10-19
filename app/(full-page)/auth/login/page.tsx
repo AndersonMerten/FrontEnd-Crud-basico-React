@@ -25,15 +25,8 @@ const LoginPage = () => {
             console.log("sucesso");
             console.log(response);
             localStorage.setItem("TOKEN_APP_FRONTEND", response.data.token);
-            if(response.data.token === "Acesso negado"){
-                toast.current?.show({
-                    severity:"error",
-                    summary: "Erro!",
-                    detail: "Login ou senha incorreta" 
-                });
-            }else{
-                router.push("/");
-            }
+            router.push("/");
+            window.location.reload();
             
         }).catch(() =>{
             console.log("Erro");
@@ -42,8 +35,7 @@ const LoginPage = () => {
                 summary: "Erro!",
                 detail: "Login ou senha incorreta" 
             });
-            setLogin("");
-            setSenha("");
+
         })
     }  
      

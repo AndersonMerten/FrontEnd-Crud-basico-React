@@ -45,6 +45,7 @@ const NewUserPage = () => {
                 summary: "Sucesso",
                 detail: "usuário cadastrado com sucesso!"
             });
+            router.push("/auth/login");
         }).catch((error) =>{
             console.log(error);
             toast.current?.show({
